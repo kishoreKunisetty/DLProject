@@ -10,10 +10,10 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 # load model
-file_name = "model.pkl"
+file_name = "ADA_model.pkl"
 model = pickle.load(open(file_name,'rb'))
 
-classes = ['1', 'C', 'L']
+classes = ['1', 'C', 'I', 'L']
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 bottomLeftCornerOfText = (10,500)
