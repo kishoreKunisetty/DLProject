@@ -10,15 +10,15 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 # load model
-file_name = "ADA_model.pkl"
+file_name = "RF_model_full.pkl"
 model = pickle.load(open(file_name,'rb'))
 
-classes = ['1', 'C', 'I', 'L']
+classes = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D','E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q','R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 bottomLeftCornerOfText = (10,500)
 fontScale = 4
-fontColor = (255,150,255)
+fontColor = (255,0,0)
 thickness = 4
 lineType = 2
 
